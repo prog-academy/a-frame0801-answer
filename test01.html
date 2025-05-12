@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ECS - A-Frame School</title>
+    <meta name="description" content="ECS - A-Frame School" />
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity
+        geometry="primitive: cylinder; height: 1.5; radius: 0.3"
+        material="color: pink"
+        position="0 0.75 -4"
+      >
+      </a-entity>
+      <a-entity
+        geometry="primitive: torus"
+        material="color: white"
+        position="0 3 -6"
+        scale="2 2 2"
+      >
+      </a-entity>
+      <a-entity
+        geometry="primitive: cone; height: 2; radiusBottom: 1"
+        material="color: turquoise"
+        position="-1 1 -3"
+        rotation="180 0 0"
+      >
+      </a-entity>
+      <a-entity
+        id="plane"
+        position="0 0 -4"
+        rotation="-90 0 0"
+        geometry="primitive: plane; width: 4; height: 4"
+        material="color: mediumaquamarine"
+      ></a-entity>
+      <a-entity
+        id="sky"
+        geometry="primitive: sphere; radius: 100"
+        material="color: gainsboro; shader: flat; side: back"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
